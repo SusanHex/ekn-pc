@@ -2,3 +2,6 @@
 
 
 /src/eknpc/log.txt
+
+# vscode config folder
+.vscode
