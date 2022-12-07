@@ -5,3 +5,8 @@
 
 # vscode config folder
 .vscode
+
+
+# renpy spec
+
+/src/*-dists
