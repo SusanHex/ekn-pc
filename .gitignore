@@ -13,6 +13,6 @@
 /src/eknpc/traceback.txt
 /src/eknpc/game/cache/*
 
-*.rpym
-*.rpa
-*.rpyc
+**/*.rpym
+**/*.rpa
+**/*.rpyc
