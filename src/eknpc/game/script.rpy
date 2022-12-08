@@ -24,19 +24,19 @@ label start:
 
     # These display lines of dialogue.
 
-    n "\[Long ago, a castle was created in the depth of a space that had existed since the dawn of reality. This castle was created in a space that was created by a mighty wizard that punched a hole in reality.\]"
+    "Long ago, a castle was created in the depth of a space that had existed since the dawn of reality. This castle was created in a space that was created by a mighty wizard that punched a hole in reality."
 
-    n "\[Fastforward an indeterminate years later\]"
+    "Fastforward an indeterminate years later"
 
-    n "\[A girl wakes up in her room, in her red pajama long shirt and pants and starts humming to herself, takes 2 light blue pills, and one oval tan pill and then notices the time saying 6:40AM\]"
+    "A girl wakes up in her room, in her red pajama long shirt and pants and starts humming to herself, takes 2 light blue pills, and one oval tan pill and then notices the time saying 6:40AM"
 
     "girl" "NO!!! I'm going to be late for school!"
 
     "girl narrating to herself" "My name is April Koenig, at least, thats the name I chose for myself, to not draw any attention."
 
-    n "\[April starts adding finishing touches to her school uniform, looking sort of like a nun, but not quite\]"
+    "April starts adding finishing touches to her school uniform, looking sort of like a nun, but not quite"
 
-    n "\[April continues narrating: but my real name is a super mega hyper phantom secret!\]"
+    "April continues narrating: but my real name is a super mega hyper phantom secret!"
 
 
 
