@@ -10,3 +10,5 @@
 # renpy spec
 
 /src/*-dists
+/src/eknpc/traceback.txt
+/src/eknpc/game/cache
