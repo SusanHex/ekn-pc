@@ -297,8 +297,8 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
-            # imagebutton idle "gui/window_icon.png" action Start()
+            # textbutton _("Start") action Start()
+            imagebutton idle "gui/window_icon.png" hover "gui/window_icon_upsidedown.png" action Start()
 
         else:
 
