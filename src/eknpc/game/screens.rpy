@@ -298,6 +298,7 @@ screen navigation():
         if main_menu:
 
             textbutton _("Start") action Start()
+            # imagebutton idle "gui/window_icon.png" action Start()
 
         else:
 
