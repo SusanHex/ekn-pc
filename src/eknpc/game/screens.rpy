@@ -375,7 +375,7 @@ screen main_menu():
             text "[config.version]":
                 style "main_menu_version"
 
-
+# $ background_image_main = renpy.random.choice(['gui/overlay/main_menu.png'])
 style main_menu_frame is empty
 style main_menu_vbox is vbox
 style main_menu_text is gui_text
@@ -386,7 +386,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background renpy.random.choice(['gui/overlay/main_menu.png', 'gui/overlay/game_menu.png'])
 
 style main_menu_vbox:
     xalign 1.0
