@@ -173,3 +173,5 @@ CubismSdkForNative-4-*.zip
 # Works in progress, throwaway scripts, etc.
 /scratch
 /*-dists
+src/eknpc/game/saves/persistent
+src/eknpc/game/saves/navigation.json
