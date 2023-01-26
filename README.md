@@ -1,2 +1,2 @@
 # ekn-pc
-This is a kinetic novel concept written in rust iced
+This is a kinetic novel concept created using renpy

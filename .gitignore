@@ -1,1 +1,18 @@
 /target
+
+
+/src/eknpc/log.txt
+
+# vscode config folder
+.vscode
+
+
+# renpy spec
+
+/src/*-dists
+/src/eknpc/traceback.txt
+/src/eknpc/game/cache/*
+
+**/*.rpym
+**/*.rpa
+**/*.rpyc
