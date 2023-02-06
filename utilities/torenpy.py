@@ -2,10 +2,11 @@
 
 from sys import argv
 from re import compile, match
+from pdb import set_trace
 # Constant Regex Patterns
 
-DESCRIPTOR_PATTERN = compile(r'^\[.+\]$')
-DIALOGUE_PATTERN = compile(r'^\"[^\"].+\:.+\"$')
+DESCRIPTOR_PATTERN = compile(r'^\[([^"]+)\]$')
+DIALOGUE_PATTERN = compile(r'^\"(\w+)\: (.+)\"$')
 # https://www.renpy.org/doc/html/text.html
 def escape_string(line: str, escape_spaces=False) -> str:
     output_string = line
@@ -22,14 +23,15 @@ def escape_string(line: str, escape_spaces=False) -> str:
 
 def generate_rp_line(raw_input_line: str, line_number = None) -> str:
     output_text = '    '
-    if pattern_match := match(DESCRIPTOR_PATTERN, raw_input_line):
-        output_text += f'"{escape_string(raw_input_line[1:-2])}"'
-    elif pattern_match := match(DIALOGUE_PATTERN, raw_input_line):
-        name, dialogue = raw_input_line[1:-2].split(':', maxsplit=1)
-        if ' ' in name.strip() or '"' in name.strip():
-            output_text += f'"{escape_string(name.strip())}" "{escape_string(dialogue.strip())}"'
-        else:
-            output_text += f'{escape_string(name.strip())} "{escape_string(dialogue.strip())}"'
+    if pattern_match := match(DIALOGUE_PATTERN, raw_input_line):
+        output_text += f'{pattern_match.group(1)} "{pattern_match.group(2)}"'
+    elif pattern_match := match(DESCRIPTOR_PATTERN, raw_input_line):
+        output_text += f'"{pattern_match.group(1)}"'
+    #     name, dialogue = raw_input_line[1:-2].split(':', maxsplit=1)
+    #     if ' ' in name.strip() or '"' in name.strip():
+    #         output_text += f'"{escape_string(name.strip())}" "{escape_string(dialogue.strip())}"'
+    #     else:
+    #         output_text += f'{escape_string(name.strip())} "{escape_string(dialogue.strip())}"'
     else:
         output_text += f"#@{line_number}: {raw_input_line}"
     return output_text
