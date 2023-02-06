@@ -11,7 +11,7 @@ def escape_string(line: str, escape_spaces=False) -> str:
     output_string = line
     output_string = output_string.replace('\\', '\\\\')
     output_string = output_string.replace('"', r'\"')
-    output_string = output_string.replace("'", r"\'")
+    # output_string = output_string.replace("'", r"\'")
     if escape_spaces:
         output_string = output_string.replace(' ', '\ ')
     # output_string = output_string.replace('\n', '\\n')
@@ -28,7 +28,7 @@ def generate_rp_line(raw_input_line: str, line_number = None) -> str:
         output_text += f'"{escape_string(raw_input_line[1:-2])}"'
     elif match(DIALOGUE_PATTERN, raw_input_line):
         name, dialogue = raw_input_line[1:-2].split(':', maxsplit=1)
-        if ' ' in name.strip():
+        if ' ' in name.strip() or '"' in name.strip():
             output_text += f'"{escape_string(name.strip())}" "{escape_string(dialogue.strip())}"'
         else:
             output_text += f'{escape_string(name.strip())} "{escape_string(dialogue.strip())}"'
@@ -38,7 +38,6 @@ def generate_rp_line(raw_input_line: str, line_number = None) -> str:
 
 def main():
     output_text = []
-    (argv)
     with open(argv[1], 'r', encoding='utf-8') as story_file:
         if len(argv) > 2:
             script_file_path = argv[2]
