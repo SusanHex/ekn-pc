@@ -21,12 +21,10 @@ def escape_string(line: str, escape_spaces=False) -> str:
 
 
 def generate_rp_line(raw_input_line: str, line_number = None) -> str:
-    
     output_text = '    '
-    
-    if match(DESCRIPTOR_PATTERN, raw_input_line):
+    if pattern_match := match(DESCRIPTOR_PATTERN, raw_input_line):
         output_text += f'"{escape_string(raw_input_line[1:-2])}"'
-    elif match(DIALOGUE_PATTERN, raw_input_line):
+    elif pattern_match := match(DIALOGUE_PATTERN, raw_input_line):
         name, dialogue = raw_input_line[1:-2].split(':', maxsplit=1)
         if ' ' in name.strip() or '"' in name.strip():
             output_text += f'"{escape_string(name.strip())}" "{escape_string(dialogue.strip())}"'
