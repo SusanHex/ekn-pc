@@ -5,8 +5,11 @@ from re import compile, match
 from pdb import set_trace
 # Constant Regex Patterns
 
-DESCRIPTOR_PATTERN = compile(r'^\[([^"]+)\]$')
-DIALOGUE_PATTERN = compile(r'^\"(\w+)\: (.+)\"$')
+TERMINATED_DESCRIPTOR_PATTERN = compile(r'^\[([^"]+)\]$')
+DESCRIPTOR_PATTERN = compile(r'^\[([^"]+)$')
+
+TERMINATED_DIALOGUE_PATTERN = compile(r'^\"(\w+)\: (.+)\"$')
+DIALOGUE_PATTERN = compile(r'^\"(\w+)\: (.+)$')
 # https://www.renpy.org/doc/html/text.html
 def escape_string(line: str, escape_spaces=False) -> str:
     output_string = line
@@ -22,9 +25,14 @@ def escape_string(line: str, escape_spaces=False) -> str:
 
 
 def generate_rp_line(raw_input_line: str, line_number = None) -> str:
+    raw_input_line = raw_input_line.strip()
     output_text = '    '
-    if pattern_match := match(DIALOGUE_PATTERN, raw_input_line):
+    if pattern_match := match(TERMINATED_DIALOGUE_PATTERN, raw_input_line):
         output_text += f'{pattern_match.group(1)} "{pattern_match.group(2)}"'
+    elif pattern_match := match(DIALOGUE_PATTERN, raw_input_line):
+        output_text += f'{pattern_match.group(1)} "{pattern_match.group(2)}"'
+    elif pattern_match := match(TERMINATED_DESCRIPTOR_PATTERN, raw_input_line):
+        output_text += f'"{pattern_match.group(1)}"'
     elif pattern_match := match(DESCRIPTOR_PATTERN, raw_input_line):
         output_text += f'"{pattern_match.group(1)}"'
     #     name, dialogue = raw_input_line[1:-2].split(':', maxsplit=1)
