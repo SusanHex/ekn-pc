@@ -19,3 +19,5 @@
 
 *.txt
 *.save
+src/eknpc/game/saves/navigation.json
+src/eknpc/game/saves/persistent
