@@ -544,7 +544,7 @@ screen chapterselect():
     
     use game_menu(_("Chapter Select"), scroll="viewport"):
         
-        style_prefix "about"
+        style_prefix "chapterselect"
 
         vbox:
 
