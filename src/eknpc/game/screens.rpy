@@ -295,6 +295,8 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
+        textbutton _("New Game") action ShowMenu("chapter_select")
+        
         if main_menu:
 
             textbutton _("Start") action Start()
