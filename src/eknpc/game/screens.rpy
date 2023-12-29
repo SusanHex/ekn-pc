@@ -545,13 +545,12 @@ screen chapterselect():
     use game_menu(_("Chapter Select"), scroll="viewport"):
         
         style_prefix "chapterselect"
-
-        vbox:
-
-            textbutton _("Chapter 1")
-            textbutton _("Chapter 2")
-            textbutton _("Chapter 3")
-            textbutton _("Chapter 4")
+        hbox:
+            grid 2 2 spacing 100:
+                textbutton _("Chapter 1")
+                textbutton _("Chapter 2")
+                textbutton _("Chapter 3")
+                textbutton _("Chapter 4")
 
 ## About screen ################################################################
 ##
