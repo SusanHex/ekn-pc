@@ -546,10 +546,7 @@ screen chapterselect():
         
         style_prefix "chapterselect"
         vbox:
-            style xcenter
             grid 3 3 spacing 260:
-                # xcenter
-            # vbox:
                 textbutton _("Chapter 1")
                 textbutton _("Chapter 2")
                 textbutton _("Chapter 3")
