@@ -1,7 +1,7 @@
-/target
+target
 
 
-/src/eknpc/log.txt
+src/eknpc/log.txt
 
 # vscode config folder
 .vscode
@@ -9,12 +9,12 @@
 
 # renpy spec
 
-/src/*-dists
-/src/eknpc/traceback.txt
-/src/eknpc/game/cache/*
-src/eknpc/game/script.rpy
-/src/eknpc/game/images/*
-/src/eknpc/game/audio/*
+*-dists
+traceback.txt
+game/cache/*
+game/script.rpy
+game/images/*
+game/audio/*
 
 **/*.rpym
 **/*.rpa
@@ -22,5 +22,5 @@ src/eknpc/game/script.rpy
 
 *.txt
 *.save
-src/eknpc/game/saves/*
+game/saves/*
 
