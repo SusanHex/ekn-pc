@@ -24,3 +24,4 @@ game/audio/*
 *.save
 game/saves/*
 
+game/tl/None/common.rpymc
