@@ -295,6 +295,8 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
+        textbutton _("New Game") action ShowMenu("chapterselect")
+        
         if main_menu:
 
             textbutton _("Start") action Start()
@@ -531,6 +533,32 @@ style return_button:
     yalign 1.0
     yoffset -45
 
+
+## Chapter Select Screen ###########################################################
+##
+## This screen is included in the main and game menus
+
+screen chapterselect():
+    
+    tag menu
+    
+    use game_menu(_("Chapter Select"), scroll="viewport"):
+        
+        style_prefix "chapterselect"
+        vbox:
+            style xcenter
+            grid 3 3 spacing 260:
+                # xcenter
+            # vbox:
+                textbutton _("Chapter 1")
+                textbutton _("Chapter 2")
+                textbutton _("Chapter 3")
+                textbutton _("Chapter 4")
+                textbutton _("minisode1")
+                textbutton _("minisode2")
+                textbutton _("17.1")
+                textbutton _("")
+                textbutton _("")
 
 ## About screen ################################################################
 ##
