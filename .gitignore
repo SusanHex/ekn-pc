@@ -12,6 +12,9 @@
 /src/*-dists
 /src/eknpc/traceback.txt
 /src/eknpc/game/cache/*
+/src/eknpc/game/script.rpy
+/src/eknpc/game/images/*
+/src/eknpc/game/audio/*
 
 **/*.rpym
 **/*.rpa
