@@ -11,6 +11,8 @@ src/eknpc/log.txt
 
 *-dists
 traceback.txt
+navigation.json
+persistent
 game/cache/*
 game/script.rpy
 game/images/*
@@ -19,6 +21,7 @@ game/audio/*
 **/*.rpym
 **/*.rpa
 **/*.rpyc
+**/*.rpyb
 
 *.txt
 *.save
