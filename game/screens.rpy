@@ -542,7 +542,7 @@ screen chapterselect():
     
     tag menu
     
-    use game_menu("chapterselect"):
+    use game_menu("Chapter Select"):
         style_prefix "chapterselect"
         fixed:
             frame: 
