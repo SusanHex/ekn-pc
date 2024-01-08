@@ -543,19 +543,23 @@ screen chapterselect():
     tag menu
     
     use game_menu(_("Chapter Select"), scroll="viewport"):
-        
         style_prefix "chapterselect"
-        vbox:
-            grid 3 3 spacing 260:
+        grid 2 2:
+            frame:
                 textbutton _("Chapter 1")
+            frame:
                 textbutton _("Chapter 2")
+            frame:
                 textbutton _("Chapter 3")
+            frame:
                 textbutton _("Chapter 4")
-                textbutton _("minisode1")
-                textbutton _("minisode2")
-                textbutton _("17.1")
-                textbutton _("")
-                textbutton _("")
+
+
+style chapterselect_frame:
+    xpadding 20
+    ypadding 20
+    xalign 0.5
+    yalign 0.5
 ## About screen ################################################################
 ##
 ## This screen gives credit and copyright information about the game and Ren'Py.
