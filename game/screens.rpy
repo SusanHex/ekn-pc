@@ -545,34 +545,32 @@ screen chapterselect():
     use game_menu("Chapter Select"):
         style_prefix "chapterselect"
         fixed:
-            frame: 
-                grid 2 5:
-                    xalign 0.5
-                    yalign 0.3
-                    frame:
-                        textbutton _("Chapter 1")
-                    frame:
-                        textbutton _("Chapter 2")
-                    frame:
-                        textbutton _("Chapter 3")
-                    frame:
-                        textbutton _("Chapter 4")
-                    frame:
-                        textbutton _("Chapter 5")
-                    frame:
-                        textbutton _("Chapter 6")
-                    frame:
-                        textbutton _("Chapter 7")
-                    frame:
-                        textbutton _("Chapter 8")
-                    frame:
-                        textbutton _("Chapter 9")
-                    frame:
-                        textbutton _("Chapter 9")
+            grid 2 5:
 
-style chapterselect_frame:
-    xpadding 20
-    ypadding 20
+                frame:
+                    textbutton _("Chapter 1")
+                frame:
+                    textbutton _("Chapter 2")
+                frame:
+                    textbutton _("Chapter 3")
+                frame:
+                    textbutton _("Chapter 4")
+                frame:
+                    textbutton _("Chapter 5")
+                frame:
+                    textbutton _("Chapter 6")
+                frame:
+                    textbutton _("Chapter 7")
+                frame:
+                    textbutton _("Chapter 8")
+                frame:
+                    textbutton _("Chapter 9")
+                frame:
+                    textbutton _("Chapter 9")
+
+style chapterselect_grid:
+    xspacing 100
+    yspacing 50
     xalign 0.5
     yalign 0.5
 ## About screen ################################################################
