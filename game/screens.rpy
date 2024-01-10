@@ -545,34 +545,52 @@ screen chapterselect():
     use game_menu("Chapter Select"):
         style_prefix "chapterselect"
         fixed:
-            grid 2 5:
+            hbox:
+                xalign 0.5
+                grid 2 5:
 
+                    frame:
+                        textbutton _("Chapter 1")
+                    frame:
+                        textbutton _("Chapter 2")
+                    frame:
+                        textbutton _("Chapter 3")
+                    frame:
+                        textbutton _("Chapter 4")
+                    frame:
+                        textbutton _("Chapter 5")
+                    frame:
+                        textbutton _("Chapter 6")
+                    frame:
+                        textbutton _("Chapter 7")
+                    frame:
+                        textbutton _("Chapter 8")
+                    frame:
+                        textbutton _("Chapter 9")
+                    frame:
+                        textbutton _("Chapter 9")
+            hbox:
+                yalign 1
                 frame:
-                    textbutton _("Chapter 1")
+                    textbutton _("Volume 1")
                 frame:
-                    textbutton _("Chapter 2")
+                    textbutton _("Volume 2")
                 frame:
-                    textbutton _("Chapter 3")
+                    textbutton _("Volume 3")
                 frame:
-                    textbutton _("Chapter 4")
+                    textbutton _("Volume 4")
                 frame:
-                    textbutton _("Chapter 5")
+                    textbutton _("Volume 5")
                 frame:
-                    textbutton _("Chapter 6")
-                frame:
-                    textbutton _("Chapter 7")
-                frame:
-                    textbutton _("Chapter 8")
-                frame:
-                    textbutton _("Chapter 9")
-                frame:
-                    textbutton _("Chapter 9")
+                    textbutton _("Volume 6")
+
+
 
 style chapterselect_grid:
     xspacing 100
     yspacing 50
     xalign 0.5
-    yalign 0.5
+    # yalign 0.5
 ## About screen ################################################################
 ##
 ## This screen gives credit and copyright information about the game and Ren'Py.
