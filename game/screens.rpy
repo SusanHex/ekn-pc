@@ -545,44 +545,29 @@ screen chapterselect():
     use game_menu("Chapter Select"):
         style_prefix "chapterselect"
         fixed:
-            hbox:
-                xalign 0.5
-                grid 2 5:
+            grid 2 5:
 
-                    frame:
-                        textbutton _("Chapter 1")
-                    frame:
-                        textbutton _("Chapter 2")
-                    frame:
-                        textbutton _("Chapter 3")
-                    frame:
-                        textbutton _("Chapter 4")
-                    frame:
-                        textbutton _("Chapter 5")
-                    frame:
-                        textbutton _("Chapter 6")
-                    frame:
-                        textbutton _("Chapter 7")
-                    frame:
-                        textbutton _("Chapter 8")
-                    frame:
-                        textbutton _("Chapter 9")
-                    frame:
-                        textbutton _("Chapter 9")
-            hbox:
-                yalign 1
                 frame:
-                    textbutton _("Volume 1")
+                    textbutton _("Chapter 1")
                 frame:
-                    textbutton _("Volume 2")
+                    textbutton _("Chapter 2")
                 frame:
-                    textbutton _("Volume 3")
+                    textbutton _("Chapter 3")
                 frame:
-                    textbutton _("Volume 4")
+                    textbutton _("Chapter 4")
                 frame:
-                    textbutton _("Volume 5")
+                    textbutton _("Chapter 5")
                 frame:
-                    textbutton _("Volume 6")
+                    textbutton _("Chapter 6")
+                frame:
+                    textbutton _("Chapter 7")
+                frame:
+                    textbutton _("Chapter 8")
+                frame:
+                    textbutton _("Chapter 9")
+                frame:
+                    textbutton _("Chapter 9")
+
 
 
 
