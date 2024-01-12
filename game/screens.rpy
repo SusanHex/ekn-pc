@@ -569,13 +569,14 @@ screen chapterselect():
                     textbutton _("Chapter 9")
 
 
-
-
 style chapterselect_grid:
     xspacing 100
     yspacing 50
     xalign 0.5
     # yalign 0.5
+
+style chapterselect_frame:
+    background "/gui/pink_button.png"
 ## About screen ################################################################
 ##
 ## This screen gives credit and copyright information about the game and Ren'Py.
