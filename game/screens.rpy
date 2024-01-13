@@ -547,10 +547,13 @@ screen chapterselect():
         fixed:
             grid 2 5:
 
-                frame:
-                    textbutton _("Chapter 1")
-                frame:
-                    textbutton _("Chapter 2")
+                button:
+                    
+                    text "Chapter 1"
+                    action NullAction()
+                button:
+                    text "Chapter 2"
+                    action NullAction()
                 frame:
                     textbutton _("Chapter 3")
                 frame:
@@ -577,6 +580,18 @@ style chapterselect_grid:
 
 style chapterselect_frame:
     background "/gui/pink_button.png"
+
+style chapterselect_button:
+    idle_background gui.idle_color
+    hover_background gui.hover_color
+    xysize(200,100)
+    xalign 0.5
+    yalign 0.5
+
+
+
+style chapterselect_button is gui_button
+style chapterselect_button_text is gui_button_text
 ## About screen ################################################################
 ##
 ## This screen gives credit and copyright information about the game and Ren'Py.
