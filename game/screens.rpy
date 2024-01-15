@@ -554,22 +554,13 @@ screen chapterselect():
                 button:
                     text "Chapter 2"
                     action NullAction()
-                frame:
-                    textbutton _("Chapter 3")
-                frame:
-                    textbutton _("Chapter 4")
-                frame:
-                    textbutton _("Chapter 5")
-                frame:
-                    textbutton _("Chapter 6")
-                frame:
-                    textbutton _("Chapter 7")
-                frame:
-                    textbutton _("Chapter 8")
-                frame:
-                    textbutton _("Chapter 9")
-                frame:
-                    textbutton _("Chapter 9")
+                button:
+                    text "Chapter 3"
+                    action NullAction()
+                button:
+                    text "Chapter 4"
+                    action NullAction()
+
 
 
 style chapterselect_grid:
