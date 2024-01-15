@@ -548,7 +548,6 @@ screen chapterselect():
             grid 2 5:
 
                 button:
-                    
                     text "Chapter 1"
                     action NullAction()
                 button:
@@ -575,6 +574,12 @@ style chapterselect_button:
     xysize(200,100)
     xalign 0.5
     yalign 0.5
+
+style chapterselect_text:
+    textalign 0.0
+    xalign 0.5
+    yalign 0.5
+
 
 
 
