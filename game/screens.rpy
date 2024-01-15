@@ -569,9 +569,6 @@ style chapterselect_grid:
     xalign 0.5
     # yalign 0.5
 
-style chapterselect_frame:
-    background "/gui/pink_button.png"
-
 style chapterselect_button:
     idle_background gui.idle_color
     hover_background gui.hover_color
